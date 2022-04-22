@@ -12,9 +12,9 @@ $(document).ready(function() {
                  //console.log("<li>" + `<input type = checkbox name="checkbox1" id = "checkbox1" ${checked}>` + val.title + "</li>");
                  });
           // });
+          items.push("</ol>");
           var checkboxes = document.getElementById("checkboxes");
           checkboxes.innerHTML = items;
-          items.push("</ol>");
           //items.forEach(function(value) {
           
               //console.log(value);
