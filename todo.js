@@ -25,7 +25,7 @@ $(document).ready(function() {
     var promise = new Promise(function(resolve,reject){
 
      window.onload = function() {
-        setTimeout(loadAfterTime, 300);
+        setTimeout(loadAfterTime, 1000);
      }; 
       
      function loadAfterTime(){
