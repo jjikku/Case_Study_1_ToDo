@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
     //$('#todo').click(function(e){
-        
         //console.log("todo clicked");
         $.getJSON('https://jsonplaceholder.typicode.com/todos', function(data) {
             var items = [];
@@ -21,16 +20,20 @@ $(document).ready(function() {
           //});
 
           });      
-    });
+        });       
+
     var promise = new Promise(function(resolve,reject){
 
      window.onload = function() {
-        setTimeout(loadAfterTime, 1000);
+        setTimeout(loadAfterTime, 1500);
      }; 
-      
+  //window.onload = loadAfterTime();
+    
+     //loadAfterTime();
+
      function loadAfterTime(){
         var inputElems = document.querySelectorAll("#checkbox1");
-        //console.log(inputElems);
+        console.log(inputElems);
 
         if(inputElems)
         {
@@ -64,10 +67,7 @@ $(document).ready(function() {
                 function(result) { alert(result);},
               );
 
-       
-        
-       
     }
+        
+   // }
 });
-
-    
